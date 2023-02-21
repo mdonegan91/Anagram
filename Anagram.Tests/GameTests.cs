@@ -24,5 +24,17 @@ namespace Anagram.Tests
       string result = newGame.FirstWord;
       Assert.AreEqual(word1, result);
     }
+
+    [TestMethod]
+    public void GetArray_ReturnsStringAsArray_Array()
+    {
+      // Game newGame = new Game("bread");
+      // Assert.AreEqual(typeof(Game), newGame.GetType());
+      string word1 = "bread";
+      Game newGame = new Game(word1);
+      char[] FirstArray = {'b', 'r', 'e', 'a', 'd'};
+      char[] result = newGame.CheckWord();
+      CollectionAssert.AreEqual(FirstArray, result);
+    }
   }
 }

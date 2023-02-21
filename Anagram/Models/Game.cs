@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Anagram.Models
@@ -11,10 +12,17 @@ namespace Anagram.Models
       get { return _firstWord; }
       set { _firstWord = value; }
     }
+
     public Game(string word1)
     {
       _firstWord = word1;
     }
 
+    public char[] CheckWord()
+    {
+      char[] charArray = _firstWord.ToCharArray();
+      return charArray;
+    }
+    
   }
 }

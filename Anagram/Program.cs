@@ -11,3 +11,8 @@ class Program
   }
 }
 }
+
+      // foreach (char ch in charArr)
+      // {
+      //   Console.WriteLine(ch);
+      // }
