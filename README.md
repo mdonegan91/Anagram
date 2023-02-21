@@ -27,4 +27,4 @@ _A a console application that..._
 
 * _MIT_
 
-Copyright (c) _2023_  _Molly Donegan_ & _Jackson Levine_
+Copyright (c) _2023_  _Molly Donegan_ & _Jackson Levine_ 
