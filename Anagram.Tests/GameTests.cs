@@ -38,15 +38,28 @@ namespace Anagram.Tests
     //   CollectionAssert.AreEqual(FirstArray, result);
     // }
 
+    // [TestMethod]
+    // public void SortArray_ReturnSortedArray_Array()
+    // {
+    //   string word1 = "bread";
+    //   string word2 = "beard";
+    //   Game newGame = new Game(word1, word2);
+    //   char[] testArray = {'a', 'b', 'd', 'e', 'r'};
+    //   char[] result = newGame.CheckWord();
+    //   CollectionAssert.AreEqual(testArray, result);
+    // }
+
     [TestMethod]
-    public void SortArray_ReturnSortedArray_Array()
+    public void CheckAnagram_DeterminesWhenAnagram_Array()
     {
       string word1 = "bread";
       string word2 = "beard";
       Game newGame = new Game(word1, word2);
-      char[] testArray = {'a', 'b', 'd', 'e', 'r'};
-      char[] result = newGame.CheckWord();
-      CollectionAssert.AreEqual(testArray, result);
+      // char[] resultArray1 = newGame.CheckWord(word1);
+      // char[] resultArray2 = newGame.CheckWord(word2);
+      string result = newGame.CheckWord(word1, word2);
+      Assert.AreEqual("true", result);
+
     }
   }
 }
