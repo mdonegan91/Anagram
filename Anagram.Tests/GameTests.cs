@@ -28,13 +28,21 @@ namespace Anagram.Tests
     [TestMethod]
     public void GetArray_ReturnsStringAsArray_Array()
     {
-      // Game newGame = new Game("bread");
-      // Assert.AreEqual(typeof(Game), newGame.GetType());
       string word1 = "bread";
       Game newGame = new Game(word1);
       char[] FirstArray = {'b', 'r', 'e', 'a', 'd'};
       char[] result = newGame.CheckWord();
       CollectionAssert.AreEqual(FirstArray, result);
+    }
+
+    [TestMethod]
+    public void SortArray_ReturnSortedArray_Array()
+    {
+      string word1 = "bread";
+      Game newGame = new Game(word1);
+      char[] charArray = {'a', 'b', 'd', 'e', 'r'};
+      char[] result = newGame.SortWord();
+      Assert.AreEqual(charArray, result);
     }
   }
 }
